@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Hệ thống đặt vé xem tốt nhất VIệt Nam</title>
-
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -16,6 +16,7 @@
 	<link href="css/style.css" rel="stylesheet" />
 	<link href="css/form.css" rel="stylesheet" type="text/css" media="all" />	
 	<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/form2.css" rel="stylesheet" type="text/css" media="all" />
   </head>
   <body>	
 	<header id="header">
@@ -30,14 +31,17 @@
                     </button>
                     <a class="navbar-brand" href="index.html">HẢI VÂN BUS</a>
                 </div>				
-                <div class="collapse navbar-collapse navbar-right">
+                <div class="collapse-navbar-collapse-navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#header">Home</a></li>
                         <li><a href="#feature">TIện ích</a></li>
                         <li><a href="#gallery">Xe</a></li>
                         <li><a href="#pricing">Các gói chuyến đi</a></li>
                         <li><a href="#our-team">Thông tin</a></li> 
-                        <li><a href="#contact">Liên hệ</a></li>                        
+                        <li><a href="#contact">Liên hệ</a></li>     
+						<button onclick="location.href='dangki.html'" type="button" name="Signin" require = "required">Đăng kí</button>
+						<button onclick="location.href='dangnhap.html'" type="button" name="Signup" require = "required">Đăng nhập</button>
+
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -66,10 +70,7 @@
 							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">								
 								<form class="form-inline">
 									<div class="form-group">
-										<button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg" required="required">Live Demo</button>
-									</div>
-									<div class="form-group">
-										<button type="getnow" name="Get Now" class="btn btn-primary btn-lg" required="required">Get Now</button>
+										<button onclick="location.href='#booking'" type="button" name="Live Demo" class="btn btn-primary btn-lg" required="required">Book now</button>
 									</div>
 								</form>
 							</div>
@@ -87,12 +88,11 @@
 							</div>
 							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.6s">								
 								<form class="form-inline">
-									<div class="form-group">
-										<button type="livedemo" name="purchase" class="btn btn-primary btn-lg" required="required">Live Demo</button>
-									</div>
-									<div class="form-group">
-										<button type="getnow" name="subscribe" class="btn btn-primary btn-lg" required="required">Get Now</button>
-									</div>
+									<form class="form-inline">
+										<div class="form-group">
+											<button onclick="location.href='#booking'" type="button" name="Live Demo" class="btn btn-primary btn-lg" required="required">Book now</button>
+										</div>
+									</form>
 								</form>
 							</div>
 						</div>
@@ -108,12 +108,11 @@
 							</div>
 							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">								
 								<form class="form-inline">
-									<div class="form-group">
-										<button type="livedemo" name="purchase" class="btn btn-primary btn-lg" required="required">Live Demo</button>
-									</div>
-									<div class="form-group">
-										<button type="getnow" name="subscribe" class="btn btn-primary btn-lg" required="required">Get Now</button>
-									</div>
+									<form class="form-inline">
+										<div class="form-group">
+											<button onclick="location.href='#booking'" type="button" name="Live Demo" class="btn btn-primary btn-lg" required="required">Book now</button>
+										</div>
+									</form>
 								</form>
 							</div>
 						</div>
@@ -130,7 +129,6 @@
 			</div> <!--/#carousel-slider-->
 		</div><!--/#about-slider-->
 	</div><!--/#slider-->
-	
 	<div id="feature">
 		<div class="container">
 			<div class="row">
@@ -250,9 +248,61 @@
 			</div>
 		</div>
 	</div><!--/#gallery-->
-	
-	
-	
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="text-center">
+				<h3>Bạn có thể đặt xe tại đây</h3>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<form>
+							<div class="row no-margin">
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Điểm đén</span>
+										<input class="form-control" type="text" placeholder="Country, ZIP, city...">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row no-margin">
+										<div class="col-md-5">
+											<div class="form-group">
+												<span class="form-label">Ngày khởi hành</span>
+												<input class="form-control" type="date" required>
+											</div>
+										</div>
+										<div class="col-md-5">
+											<div class="form-group">
+												<span class="form-label">Ngày kết thúc</span>
+												<input class="form-control" type="date" required>
+											</div>
+										</div>
+										<div class="col-md-2">
+											<div class="form-group">
+												<span class="form-label">Số lượng</span>
+												<select class="form-control">
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+												</select>
+												<span class="select-arrow"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-btn">
+										<button class="submit-btn">Check availability</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="pricing">
 		<div class="container">
 			<div class="text-center">
@@ -266,16 +316,13 @@
                     <div class="col-sm-4 plan price-one wow fadeInDown" data-wow-offset="0" data-wow-delay="0.2s">
                         <ul>
                             <li class="heading-one">
-                                <h2>High Class</h2>
-                                <span>1200</span>
+                                <h2>Gói 1</h2>
+                                <span>200.000đ/người</span>
                             </li>
+							<li> Xe thoáng mát</li>
                             <li>Chỗ ngồi cạnh cửa sổ</li>
-                            <li>Có Wifi</li>
-                            <li>Có cắm sạc trực tiếp trên xe</li>
-                            <li>Có ghế giường nằm</li>
-                            <li>Đồ ăn, nước uống tùy chọn</li>
                             <li class="plan-action">
-                                <a href="" class="btn btn-primary">Sign up</a>
+                                <a href="thongtinxe.html" class="btn btn-primary">Đặt ngay</a>
                             </li>
                         </ul>
                     </div>
@@ -283,16 +330,14 @@
                     <div class="col-sm-4 plan price-two wow fadeInDown" data-wow-offset="0" data-wow-delay="0.6s">
                         <ul>
                             <li class="heading-two">
-                                <h2>Standard Class</h2>
-                                <span>1100</span>
+                                <h2>Gói 2</h2>
+                                <span>300.000đ/người</span>
                             </li>
+							<li>Xe thóng mát</li>
                             <li>Chỗ ngồi cạnh cửa sổ</li>
-                            <li>Có Wifi</li>
                             <li>Có cắm sạc trực tiếp trên xe</li>
-                            <li>Có ghế giường nằm</li>
-                            <li>Đồ ăn, nước uống tùy chọn</li>
                             <li class="plan-action">
-                                <a href="" class="btn btn-primary">Sign up</a>
+                                <a href="thongtinxe.html" class="btn btn-primary">Đặt ngay</a>
                             </li>
                         </ul>
                     </div>
@@ -301,16 +346,15 @@
                         <img src="img/ri.png">
                         <ul>
                             <li class="heading-three">
-                                <h2>Premium Class</h2>
-                                <span>1000</span>
+                                <h2>Gói 5</h2>
+                                <span>400.000đ/người</span>
                             </li>
+							<li>Xe thóng mát</li>
                             <li>Chỗ ngồi cạnh cửa sổ</li>
                             <li>Có Wifi</li>
                             <li>Có cắm sạc trực tiếp trên xe</li>
-                            <li>Có ghế giường nằm</li>
-                            <li>Đồ ăn, nước uống tùy chọn</li>
                             <li class="plan-action">
-                                <a href="" class="btn btn-primary">Sign up</a>
+                                <a href="thongtinxe.html" class="btn btn-primary">Đặt ngay</a>
                             </li>
                         </ul>
                     </div>
@@ -318,16 +362,12 @@
                     <div class="col-sm-6 col-md-3 plan price-four wow fadeInLeft">
                         <ul>
                             <li class="heading-four">
-                                <h2>Basic Class</h2>
-                                <span>800</span>
+                                <h2>Gói 3</h2>
+                                <span>100.000d\người</span>
                             </li>
-                            <li>Chỗ ngồi cạnh cửa sổ</li>
-                            <li>Có Wifi</li>
-                            <li>Có cắm sạc trực tiếp trên xe</li>
-                            <li>Có ghế giường nằm</li>
-                            <li>Đồ ăn, nước uống tùy chọn</li>
+                            <li>xe thoáng mát</li>
                             <li class="plan-action">
-                                <a href="" class="btn btn-primary">Sign up</a>
+                                <a href="thongtinxe.html" class="btn btn-primary">Đặt ngay</a>
                             </li>
                         </ul>
                     </div>
@@ -335,16 +375,13 @@
                     <div class="col-sm-6 col-md-3 plan price-five wow fadeInLeft">
                         <ul>
                             <li class="heading-five">
-                                <h2>Basic Standard class</h2>
-                                <span>600</span>
+                                <h2>Gói 4</h2>
+                                <span>150.000đ/người</span>
                             </li>
-                            <li>Chỗ ngồi cạnh cửa sổ</li>
-                            <li>Có Wifi</li>
-                            <li>Có cắm sạc trực tiếp trên xe</li>
-                            <li>Có ghế giường nằm</li>
+                            <li>Xe thóng mát</li>
                             <li>Đồ ăn, nước uống tùy chọn</li>
                             <li class="plan-action">
-                                <a href="" class="btn btn-primary">Sign up</a>
+                                <a href="thongtinxe.html" class="btn btn-primary">Đặt ngay</a>
                             </li>
                         </ul>
                     </div>
@@ -353,16 +390,17 @@
                          <img src="img/rib.png">
                         <ul>
                             <li class="heading-six">
-                                <h2>Basic Premium Class</h2>
-                                <span>500</span>
+                                <h2>Gói 6</h2>
+                                <span>450.000đ/người</span>
                             </li>
+							<li>Xe thóng mát</li>
                             <li>Chỗ ngồi cạnh cửa sổ</li>
                             <li>Có Wifi</li>
                             <li>Có cắm sạc trực tiếp trên xe</li>
-                            <li>Có ghế giường nằm</li>
-                            <li>Đồ ăn, nước uống tùy chọn</li>
+							<li>
+							<li>Miễn phí 2gb Wifi</li>
                             <li class="plan-action">
-                                <a href="" class="btn btn-primary">Sign up</a>
+                                <a href="thongtinxe.html" class="btn btn-primary">Đặt ngay</a>
                             </li>
                         </ul>
                     </div>
@@ -370,16 +408,18 @@
                     <div class="col-sm-6 col-md-3 plan price-seven wow fadeInRight">
                         <ul>
                             <li class="heading-seven">
-                                <h2>VIP</h2>
-                                <span>2000</span>
+                                <h2>GÓi 7</h2>
+                                <span>500.000đ/người</span>
                             </li>
+							<li>Xe thóng mát</li>
                             <li>Chỗ ngồi cạnh cửa sổ</li>
                             <li>Có Wifi</li>
                             <li>Có cắm sạc trực tiếp trên xe</li>
                             <li>Có ghế giường nằm</li>
                             <li>Đồ ăn, nước uống tùy chọn</li>
+							<li>Miễn phí 5GB Wifi</li>
                             <li class="plan-action">
-                                <a href="" class="btn btn-primary">Sign up</a>
+                                <a href="thongtinxe.html" class="btn btn-primary">Đặt ngay</a>
                             </li>
                         </ul>
                     </div>
@@ -509,6 +549,8 @@
                         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=RISHABH BUS
                     -->
                 </div>
+				<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-6b1e6051-3cd5-4b2b-afc7-49d017a1163f"></div>
 			</div>
 		</div>									
 	</footer>

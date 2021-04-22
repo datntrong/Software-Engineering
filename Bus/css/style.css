@@ -114,7 +114,7 @@ hr {
 }
 
 .navbar>.container .navbar-brand{
-  margin-left: 0;
+  margin-left: -50px;
 }
 
 .navbar-brand {
@@ -186,7 +186,18 @@ hr {
   background-color: #2bb8ff;
   color: #fff;
 }
-
+.collapse-navbar-collapse-navbar-right button{
+  color: #0BA9F9;
+  -webkit-transition: color 300ms, background-color 300ms;
+  -moz-transition: color 300ms, background-color 300ms;
+  -o-transition:  color 300ms, background-color 300ms;
+  transition:  color 300ms, background-color 300ms;
+  margin-left:30px;
+  margin-top:5px;
+  height: 35px;
+  width:100px;
+  border-radius: 5px;;
+}
 /*************************
 *******Slider******
 **************************/
@@ -279,14 +290,14 @@ hr {
   color:#fff;
 }
 
-.carousel-inner .form-inline .form-group button[type="livedemo"]{
+.carousel-inner .form-inline .form-group button{
 	padding:20px 60px;
 	font-size:25px;
 	background:#0BA9F9;
 	color:#fff;
 }
 
-.carousel-inner .form-inline .form-group button[type="livedemo"]:hover {
+.carousel-inner .form-inline .form-group button:hover {
 	color:#0BA9F9;
 	background:#fff;
 	-webkit-transition: color 300ms, background-color 300ms;
@@ -295,21 +306,6 @@ hr {
   transition:  color 300ms, background-color 300ms;
 }
 
-.carousel-inner .form-inline .form-group button[type="getnow"]{
-	padding:20px 60px;
-	font-size:25px;
-	background:#fff;
-	color:#0BA9F9;
-}
-
-.carousel-inner .form-inline .form-group button[type="getnow"]:hover {
-	color:#fff;
-	background:#0BA9F9;
-	-webkit-transition: color 300ms, background-color 300ms;
-  -moz-transition: color 300ms, background-color 300ms;
-  -o-transition:  color 300ms, background-color 300ms;
-  transition:  color 300ms, background-color 300ms;
-}
 
 /*************************
 *******feature******
