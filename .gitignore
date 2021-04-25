@@ -24,7 +24,9 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
+.DS_Store
 
+.DS_Store
 packages/react-devtools-core/dist
 packages/react-devtools-extensions/chrome/build
 packages/react-devtools-extensions/chrome/*.crx
