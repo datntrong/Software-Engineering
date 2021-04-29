@@ -25,6 +25,7 @@ chrome-user-data
 *.swp
 *.swo
 .DS_Store
+.env
 
 .DS_Store
 packages/react-devtools-core/dist
