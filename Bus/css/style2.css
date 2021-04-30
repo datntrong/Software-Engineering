@@ -57,6 +57,8 @@
 .booking-form .form-group {
 	position: relative;
 	margin-bottom: 15px;
+	margin-left: 100px;
+	margim-right: 100px;
 }
 
 .booking-form .form-control {
