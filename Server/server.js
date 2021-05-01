@@ -1,4 +1,5 @@
 const http = require('http');
+const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -15,8 +16,10 @@ app.use(bodyParser.json());
 pool.query(`USE ${process.env.DATABASE}`);
 global.pool = pool;
 
+app.use(express.static('../Bus'));
+
 // all the api routes
-app.use('/api', index);
+app.use('/', index);
 
 // port initialized
 const PORT = process.env.PORT || 5000;

@@ -12,7 +12,8 @@ const User = function (user) {
 
 User.register = (newUser, result) => {
   const query = `INSERT INTO user(acc, pass, phoneNum, Name) VALUES(?, ?, ?, ?);`;
-  pool.query(query, [newUser.username, newUser.password, newUser.phone, 'Idol Dat'], (err, res) => {
+  pool.query(query, [newUser.username, newUser.password, newUser.phone, 'Idol Dat'],
+                                  (err, res) => {
     if (err) {
       console.log('error: ', err);
       result(

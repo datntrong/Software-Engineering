@@ -6,7 +6,7 @@ const usersController = require('../controllers/users');
 
 const router = express.Router();
 
-/** @route      POST /users/:id
+/** @route      POST /users
  *  @desc       register a new user
  *  @access     Private
  */

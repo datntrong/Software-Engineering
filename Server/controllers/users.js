@@ -30,6 +30,5 @@ const register = async (req, res) => {
 };
 
 module.exports = usersController = {
-  // getUsers,
   register,
 };

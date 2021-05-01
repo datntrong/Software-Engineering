@@ -30,6 +30,5 @@ const login = (req, res) => {
 };
 
 module.exports = authController = {
-  // loadUser,
   login,
 };
