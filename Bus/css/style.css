@@ -178,7 +178,7 @@ hr {
 }
 
 .navbar-fixed-top .navbar-brand {
-  font-size: 36px;
+  font-size: 30px;
   line-height: 50px;
   color: #fff;
 }
@@ -865,4 +865,22 @@ ul.social-network li a {
 }
 .social-network li:hover .fa-pinterest-square {
   color: #EA4B49; 
+}
+
+.collapse-navbar-collapse-navbar-right ul ul{
+  display: none;
+}
+.collapse-navbar-collapse-navbar-right ul li:hover > ul{
+  display: block;
+}
+.collapse-navbar-collapse-navbar-right ul li ul li{
+  background:#e5e5e5;
+  border: 1px solid #fff;
+  height: 50px ;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  height: 30px;
+  width: 70px;
 }
