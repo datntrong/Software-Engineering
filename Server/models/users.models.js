@@ -62,6 +62,7 @@ User.register = (newUser, result) => {
 };
 
 User.login = (newUser, result) => {
+  console.log(newUser)
   const query = `SELECT * FROM user WHERE acc = ?;`;
 
   pool.query(query, newUser.username, async (err, results) => {

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hệ thống đặt vé xem tốt nhất VIệt Nam</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="preload" href="css/antd.min.css" as="style">
+    <link rel="stylesheet" href="css/antd.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/overwrite.css">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+
+    
+</head>
+<body>
+<header id="header">
+    <nav class="navbar navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">HẢI VÂN BUS</a>
+            </div>
+            <div class="collapse-navbar-collapse-navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#header">Home</a></li>
+                    <li><a href="#feature">Tiện ích</a></li>
+                    <li><a href="#gallery">Xe</a></li>
+                    <li><a href="#pricing">Các gói chuyến đi</a></li>
+                    <li><a href="#our-team">Thông tin</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                    <button onclick="location.href='dangki.html'" type="button" name="Signin" require = "required">Đăng ký</button>
+                    <button onclick="location.href='dangnhap.html'" type="button" name="Signup" require = "required">Đăng nhập</button>
+
+                </ul>
+            </div>
+        </div><!--/.container-->
+    </nav><!--/nav-->
+</header><!--/header-->
+
+<div class="slider">
+</div><!--/#slider-->
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form id="validate" action="/action_page.php">
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input type="text" id="fname" name="fullname" placeholder="Soeng.Souy" required>
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="soeng.souy@gmail.com" required>
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input type="text" id="adr" name="address" placeholder="110 W. 15th Phnom Penh" required>
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="Phnom Penh" required>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="Phnom Penh"required>
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="12000"required>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </form>
+        </div>
+    </div>
+    <div class="col-25">
+        <div class="container">
+            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+            <p><a href="#">IPHONE 12 Pro Mac</a> <span class="price">$1500</span></p>
+            <p><a href="#">SAMSUNG S21</a> <span class="price">$1500</span></p>
+            <p><a href="#">OPPO F14</a> <span class="price">$1400</span></p>
+            <p><a href="#">HUAWEI 20 Mac</a> <span class="price">$1200</span></p>
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>$12600</b></span></p>
+            <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                <input type="submit" value="Continue to checkout" class="btn">
+        </div>
+    </div>
+    
+</div>
+<!-- script validate js -->
+<script>
+    $('#validate').validate({
+        roles: {
+            fullname: {
+                required: true,
+            },
+            email: {
+                required: true,
+            },
+            address: {
+                required: true,
+            },
+            city: {
+                required: true,
+            },
+            state: {
+                required: true,
+            },
+            zip: {
+                required: true,
+            },
+            cardname: {
+                required: true,
+            },
+            cardnumber: {
+                required: true,
+            },
+            expmonth: {
+                required: true,
+            },
+            expyear: {
+                required: true,
+            },
+            cvv: {
+                required: true,
+            },
+           
+        },
+        messages: {
+            fullname:"Please input full name*",
+            email:"Please input email*",
+            city:"Please input city*",
+            address:"Please input address*",
+            state:"Please input state*",
+            zip:"Please input address*",
+            cardname:"Please input card name*",
+            cardnumber:"Please input card number*",
+            expmonth:"Please input exp month*",
+            expyear:"Please input exp year*",
+            cvv:"Please input cvv*",
+        },
+    });
+</script>
+    <footer>
+        <div id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h3>Hãy liên lạc với chúng tôi</h3>
+                    <p>CHúng tôi rất vui khi được hỗ trợ</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.2s">
+                        <h2>Liên lạc với chúng tôi <br>bất cứ lúc nào</h2>
+                        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                    </div>
+
+                    <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.4s">
+                        <h2>Thông tin liên lạc</h2>
+                        <ul>
+                            <li><i class="fa fa-home fa-2x"></i> Trường đại học Công Nghệ, 144 Xuân Thủy Hà Nội</li><hr>
+                            <li><i class="fa fa-phone fa-2x"></i>0123456789</li><hr>
+                            <li><i class="fa fa-envelope fa-2x"></i> abc@gmail.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                        <div id="sendmessage">Your message has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+                        <form action="" method="post" role="form" class="contactForm">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Tên bạn" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Địa chỉ Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Nghề Nghiệp" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Hãy để lại tin nhắn cho chúng tôi"></textarea>
+                                <div class="validation"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-theme pull-left">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!--/#contact-->
+
+        <div class="social-icon">
+            <div class="container">
+                <div class="col-md-6 col-md-offset-3">
+                    <ul class="social-network">
+                        <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a href="#" class="dribbble tool-tip" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#" class="pinterest tool-tip" title="Pinterest"><i class="fa fa-pinterest-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <div class="copyright">
+                &copy; HẢI VÂN BUS Theme. All Rights Reserved.
+                <div class="credits">
+                    <!--
+                        All the links in the footer should remain intact.
+                        You can delete the links only if you purchased the pro version.
+                        Licensing information: https://bootstrapmade.com/license/
+                        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=RISHABH BUS
+                    -->
+                </div>
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-6b1e6051-3cd5-4b2b-afc7-49d017a1163f"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/fliplightbox.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="contactform/contactform.js"></script>
+
+</body>
+</html>
