@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "stylesheet" href = "css/form1.css">
-    <title>Đăng nhập </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Đăng nhập </title>
 </head>
 <body>
 <div class ="container">
-    <form class = "form-login" action ="/login" method="POST">
+    <form class = "form-login">
         <h1>Đăng nhập</h1>
         <div class ="form-text">
             <input type = "text" id ="username" placeholder="username" username ="username">
@@ -16,12 +17,26 @@
         <div class ="form-text">
             <input type = "password" id ="password" placeholder="password" password ="password">
         </div>
-        <button type ="submit">Đăng nhập</button>
+        <button onclick="login()">Đăng nhập</button>
         <h4>Bạn chưa có tài khoản ? Đăng kí <a href="dangki.html">Tại Đây</h4><br>
         <h4> <a href="dangnhapsdt.html">Đăng nhập bằng Số điện thoại</h4>
     </form>
 </div>
 <script>
+  function login() {
+    $.ajax({
+      url: '/auth',
+      type: 'POST',
+      data: {
+        username: $('#username').val(),
+        password: $('#password').val()
+      }
+    }).then(data => {
+        console.log(data);
+    }).catch(err => {
+        console.log(err);
+    })
+  }
 </script>
 </body>
 </html>
