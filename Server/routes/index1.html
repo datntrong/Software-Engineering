@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hệ thống đặt vé xem tốt nhất VIệt Nam</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/overwrite.css">
+	<link href="css/animate.min.css" rel="stylesheet"> 
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/form.css" rel="stylesheet" type="text/css" media="all" />	
+	<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/form2.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>	
+	<header id="header">
+        <nav class="navbar navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">HẢI VÂN BUS</a>
+                </div>				
+                <div class="collapse-navbar-collapse-navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#header">Home</a></li>
+                        <li><a href="#feature">Tiện ích</a></li>
+                        <li><a href="#gallery">Xe</a></li>
+                        <li><a href="#pricing">Các gói chuyến đi</a></li>
+                        <li><a href="#our-team">Thông tin</a></li> 
+                        <li><a href="#contact">Liên hệ</a></li>     
+						<button onclick="location.href='dangki.html'" type="button" name="Signin" require = "required">Đăng ký</button>
+						<button onclick="location.href='http://localhost:5000/login'" type="button" name="Signup" require = "required">Đăng nhập</button>
+
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->		
+    </header><!--/header-->	
+	<div class="slider">		
+		<div id="about-slider">
+			<div id="carousel-slider" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators visible-xs">
+					<li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-slider" data-slide-to="1"></li>
+					<li data-target="#carousel-slider" data-slide-to="2"></li>
+				</ol>
+
+				<div class="carousel-inner">
+					<div class="item active">						
+						<img src="img/7.jpg" class="img-responsive" alt=""> 
+						<div class="carousel-caption">
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">								
+								<h2><span>Thiết kế đẹp và sang trọng </span></h2>
+							</div>
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">								
+								
+							</div>
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">								
+								<form class="form-inline">
+									<div class="form-group">
+										<button onclick="location.href='#booking'" type="button" name="Live Demo" class="btn btn-primary btn-lg" required="required">Book now</button>
+									</div>
+								</form>
+							</div>
+						</div>
+				    </div>
+			
+				    <div class="item">
+						<img src="img/6.jpg" class="img-responsive" alt=""> 
+						<div class="carousel-caption">
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.0s">								
+								<h2>Dịch vụ hoàn hảo</h2>
+							</div>
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.3s">								
+								<p></p>
+							</div>
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.6s">								
+								<form class="form-inline">
+									<form class="form-inline">
+										<div class="form-group">
+											<button onclick="location.href='#booking'" type="button" name="Live Demo" class="btn btn-primary btn-lg" required="required">Book now</button>
+										</div>
+									</form>
+								</form>
+							</div>
+						</div>
+				    </div> 
+				    <div class="item">
+						<img src="img/1.jpg" class="img-responsive" alt=""> 
+						<div class="carousel-caption">
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">								
+								<h2>Lái xe an toàn</h2>
+							</div>
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">								
+								<p></p>
+							</div>
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">								
+								<form class="form-inline">
+									<form class="form-inline">
+										<div class="form-group">
+											<button onclick="location.href='#booking'" type="button" name="Live Demo" class="btn btn-primary btn-lg" required="required">Book now</button>
+										</div>
+									</form>
+								</form>
+							</div>
+						</div>
+				    </div> 
+				</div>
+				
+				<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+					<i class="fa fa-angle-left"></i> 
+				</a>
+				
+				<a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
+					<i class="fa fa-angle-right"></i> 
+				</a>
+			</div> <!--/#carousel-slider-->
+		</div><!--/#about-slider-->
+	</div><!--/#slider-->
+	<div id="feature">
+		<div class="container">
+			<div class="row">
+				<div class="text-center">
+					<h3>Hãy đến với chúng tôi</h3>
+					<p>CHúng tôi sẽ cung cấp cho bạn <br>các dịch vụ tốt nhất</p>
+				</div>
+				<div class="col-md-3 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="text-center">
+						<div class="hi-icon-wrap hi-icon-effect">
+							<i class="fa fa-laptop"></i>						
+							<h2>TIện ích tiện nghi</h2>
+							<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="text-center">
+						<div class="hi-icon-wrap hi-icon-effect">
+							<i class="fa fa-heart-o"></i>
+							<h2>Sạch sẽ và thoáng mát</h2>
+							<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="text-center">
+						<div class="hi-icon-wrap hi-icon-effect">
+							<i class="fa fa-cloud"></i>
+							<h2>Hỗ trợ nhiệt tình</h2>
+							<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="text-center">
+						<div class="hi-icon-wrap hi-icon-effect">
+							<i class="fa fa-camera"></i>
+							<h2>Giá rẻ</h2>
+							<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="gallery">
+		<div class="container">
+			<div class="text-center">
+				<h3>Các mẫu xe </h3>
+				<p>Sẽ được  chúng tôi <br>Phục vụ quý khách</p>
+			</div>
+			<div class="row">
+				<figure class="effect-chico">						
+					<div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+						<a href="img/work/1.jpg" class="flipLightBox">
+						<img src="img/work/1.jpg" class="img-responsive" alt="">
+						</a>						
+					</div>
+				</figure>
+				<figure class="effect-chico">
+					<div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+						<a href="img/work/2.jpg" class="flipLightBox">
+						<img src="img/work/2.jpg" class="img-responsive" alt="">
+						</a>
+					</div>
+				</figure>	
+				<figure class="effect-chico">
+					<div class="col-md-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
+						<a href="img/work/3.jpg" class="flipLightBox">
+						<img src="img/work/3.jpg" class="img-responsive" alt="">
+						</a>
+					</div>
+				</figure>
+				<figure class="effect-chico">
+					<div class="col-md-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
+						<a href="img/work/4.jpg" class="flipLightBox">
+						<img src="img/work/4.jpg" class="img-responsive" alt="">
+						</a>
+					</div>	
+				</figure>
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="container">
+				<div class="row">
+					<figure class="effect-chico">
+						<div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+							<a href="img/work/5.jpg" class="flipLightBox">
+							<img src="img/work/5.jpg" class="img-responsive" alt="">
+							</a>
+						</div>
+					</figure>	
+					<figure class="effect-chico">
+						<div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+							<a href="img/work/6.jpg" class="flipLightBox">
+							<img src="img/work/6.jpg" class="img-responsive" alt="">
+							</a>
+						</div>
+					</figure>	
+					<figure class="effect-chico">
+						<div class="col-md-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
+							<a href="img/work/7.jpg" class="flipLightBox">
+							<img src="img/work/7.jpg" class="img-responsive" alt="">
+							</a>
+						</div>
+					</figure>	
+					<figure class="effect-chico">
+						<div class="col-md-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
+							<a href="img/work/8.jpg" class="flipLightBox">
+							<img src="img/work/8.jpg" class="img-responsive" alt="">
+							</a>
+						</div>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div><!--/#gallery-->
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="text-center">
+				<h3>Bạn có thể đặt xe tại đây</h3>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<form>
+							<div class="row no-margin">
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Điểm đi</span>
+										<input class="form-control" type="text" id ="from"  placeholder="Country, ZIP, city..." required>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row no-margin">
+										<div class="col-md-5">
+											<div class="form-group">
+												<span class="form-label">Điểm đén</span>
+												<input class="form-control" type="text" id ="to"  placeholder="Country, ZIP, city..." required>
+											</div>
+										</div>
+										<div class="col-md-5">
+											<div class="form-group">
+												<span class="form-label">Ngày khởi hành</span>
+												<input class="form-control" type="text" placeholder="yyyy-mm-dd" id="time"required>
+											</div>
+										</div>
+										<div class="col-md-2">
+											<div class="form-group">
+												<span class="form-label">Số lượng</span>
+												<input class="form-control" type="number" id="num">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-btn">
+										<button class="submit-btn" onclick="checkBus()">Check availability</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function checkBus() {
+        $.ajax({
+      url: '/trips',
+      type: 'POST',
+      data: {
+        from = $('#from').val(),
+		to: $('#to').val(),
+		time: $('#time').val(),
+		num: $('#num').val()
+      }
+    }).then(data => {
+        console.log(data);
+    }).catch(err => {
+        console.log(err);
+    })
+	</script>
+	<div id="pricing">
+		<div class="container">
+			<div class="text-center">
+				<h3>Bảng giá</h3>
+				<p>Các gói chuyến đi<br>
+				với các tiện ích</p>
+			</div>
+			
+			<div class="pricing-area text-center">
+                <div class="row">
+                    <div class="col-sm-4 plan price-one wow fadeInDown" data-wow-offset="0" data-wow-delay="0.2s">
+                        <ul>
+                            <li class="heading-one">
+                                <h2>Gói 1</h2>
+                                <span>200.000đ/người</span>
+                            </li>
+							<li> Xe thoáng mát</li>
+                            <li>Chỗ ngồi cạnh cửa sổ</li>
+                            <li class="plan-action">
+                                <a href="thongtinxe.html" class="btn btn-primary">Đặt ngay</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4 plan price-two wow fadeInDown" data-wow-offset="0" data-wow-delay="0.6s">
+                        <ul>
+                            <li class="heading-two">
+                                <h2>Gói 2</h2>
+                                <span>300.000đ/người</span>
+                            </li>
+							<li>Xe thóng mát</li>
+                            <li>Chỗ ngồi cạnh cửa sổ</li>
+                            <li>Có cắm sạc trực tiếp trên xe</li>
+                            <li class="plan-action">
+                                <a href="thongtinxe.html" class="btn btn-primary">Đặt ngay</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4 plan price-three wow fadeInDown" data-wow-offset="0" data-wow-delay="0.9s">
+                        <img src="img/ri.png">
+                        <ul>
+                            <li class="heading-three">
+                                <h2>Gói 5</h2>
+                                <span>400.000đ/người</span>
+                            </li>
+							<li>Xe thóng mát</li>
+                            <li>Chỗ ngồi cạnh cửa sổ</li>
+                            <li>Có Wifi</li>
+                            <li>Có cắm sạc trực tiếp trên xe</li>
+                            <li class="plan-action">
+                                <a href="thongtinxe.html" class="btn btn-primary">Đặt ngay</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 plan price-four wow fadeInLeft">
+                        <ul>
+                            <li class="heading-four">
+                                <h2>Gói 3</h2>
+                                <span>100.000d\người</span>
+                            </li>
+                            <li>xe thoáng mát</li>
+                            <li class="plan-action">
+                                <a href="thongtinxe.html" class="btn btn-primary">Đặt ngay</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 plan price-five wow fadeInLeft">
+                        <ul>
+                            <li class="heading-five">
+                                <h2>Gói 4</h2>
+                                <span>150.000đ/người</span>
+                            </li>
+                            <li>Xe thóng mát</li>
+                            <li>Đồ ăn, nước uống tùy chọn</li>
+                            <li class="plan-action">
+                                <a href="thongtinxe.html" class="btn btn-primary">Đặt ngay</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 plan price-six wow fadeInRight">
+                         <img src="img/rib.png">
+                        <ul>
+                            <li class="heading-six">
+                                <h2>Gói 6</h2>
+                                <span>450.000đ/người</span>
+                            </li>
+							<li>Xe thóng mát</li>
+                            <li>Chỗ ngồi cạnh cửa sổ</li>
+                            <li>Có Wifi</li>
+                            <li>Có cắm sạc trực tiếp trên xe</li>
+							<li>
+							<li>Miễn phí 2gb Wifi</li>
+                            <li class="plan-action">
+                                <a href="thongtinxe.html" class="btn btn-primary">Đặt ngay</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 plan price-seven wow fadeInRight">
+                        <ul>
+                            <li class="heading-seven">
+                                <h2>GÓi 7</h2>
+                                <span>500.000đ/người</span>
+                            </li>
+							<li>Xe thóng mát</li>
+                            <li>Chỗ ngồi cạnh cửa sổ</li>
+                            <li>Có Wifi</li>
+                            <li>Có cắm sạc trực tiếp trên xe</li>
+                            <li>Có ghế giường nằm</li>
+                            <li>Đồ ăn, nước uống tùy chọn</li>
+							<li>Miễn phí 5GB Wifi</li>
+                            <li class="plan-action">
+                                <a href="thongtinxe.html" class="btn btn-primary">Đặt ngay</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--/pricing-area-->			
+		</div>
+	</div><!--/#pricing-->
+	
+	<div id="our-team">
+		<div class="container">
+			<div class="text-center">
+				<h3>Đội ngũ của chúng tôi</h3>
+				<p>Sẽ giúp bạn khi gặp khó khăn<br>Cung cấp tư vấn cho bạn về dịch vụ của chúng tôi</p>
+			</div>
+			<div class="row">
+				<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="text-center">
+						<img src="img/team/rb2.jpg" alt="">
+						<h2>Vũ Mạnh Cường</h2>
+						<h4>Manager</h4>
+						<p>Phone No-111111</p>
+					</div>
+				</div>
+				<div class="col-md-4 wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="text-center">
+						<img src="img/team/rib1.png" alt="">
+						<h2>Nguyễn Trọng Đạt</h2>
+						<h4>Assitent Manager</h4>
+						<p>Phone No-2222222222</p>
+					</div>
+				</div>
+				<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="text-center">
+						<img src="img/team/rib1.png" alt="">
+						<h2>Nguyễn Văn Hải</h2>
+						<h4>Driver</h4>
+						<p>Phone No-3333333</p>
+					</div>
+				</div>
+				<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+					<div class="text-center">
+						<img src="img/team/rib1.png" alt="">
+						<h2>HIếu</h2>
+						<h4>Driver</h4>
+						<p>Phone No-3333333</p>
+					</div>
+				</div>		
+			</div>
+		</div>
+		
+	
+	<footer>
+		<div id="contact">
+			<div class="container">
+				<div class="text-center">
+					<h3>Hãy liên lạc với chúng tôi</h3>
+					<p>CHúng tôi rất vui khi được hỗ trợ</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.2s">
+						<h2>Liên lạc với chúng tôi <br>bất cứ lúc nào</h2>
+						<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>				
+					</div>				
+					
+					<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.4s">
+						<h2>Thông tin liên lạc</h2>
+						<ul>
+							<li><i class="fa fa-home fa-2x"></i> Trường đại học Công Nghệ, 144 Xuân Thủy Hà Nội</li><hr>
+							<li><i class="fa fa-phone fa-2x"></i>0123456789</li><hr>
+							<li><i class="fa fa-envelope fa-2x"></i> abc@gmail.com</li>
+						</ul>
+					</div>
+					
+					<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">  	
+					    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+                        <form action="" method="post" role="form" class="contactForm">
+                                <div class="form-group">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Tên bạn" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Địa chỉ Email" data-rule="email" data-msg="Please enter a valid email" />
+                                        <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Nghề Nghiệp" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                        <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Hãy để lại tin nhắn cho chúng tôi"></textarea>
+                                        <div class="validation"></div>
+                                </div>
+                            
+                            <button type="submit" class="btn btn-theme pull-left">SEND MESSAGE</button>
+                        </form>
+					</div>	
+				</div>
+			</div>
+		</div><!--/#contact-->					
+					
+		<div class="social-icon">
+			<div class="container">
+				<div class="col-md-6 col-md-offset-3">						
+					<ul class="social-network">
+						<li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+						<li><a href="#" class="dribbble tool-tip" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="#" class="pinterest tool-tip" title="Pinterest"><i class="fa fa-pinterest-square"></i></a></li>
+					</ul>						
+				</div>
+			</div>
+		</div>						
+		<div class="text-center">
+			<div class="copyright">
+				&copy; HẢI VÂN BUS Theme. All Rights Reserved.
+                <div class="credits">
+                    <!-- 
+                        All the links in the footer should remain intact. 
+                        You can delete the links only if you purchased the pro version.
+                        Licensing information: https://bootstrapmade.com/license/
+                        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=RISHABH BUS
+                    -->
+                </div>
+				<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-6b1e6051-3cd5-4b2b-afc7-49d017a1163f"></div>
+			</div>
+		</div>									
+	</footer>		
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>	
+	<script src="js/parallax.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+	<script src="js/functions.js"></script>
+    <script src="contactform/contactform.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>

@@ -4,40 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "stylesheet" href = "css/form1.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <title>Đăng nhập </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Đăng kí </title>
 </head>
 <body>
 <div class ="container">
     <form class = "form-login">
-        <h1>Đăng nhập</h1>
+        <h1>Đăng kí</h1>
         <div class ="form-text">
             <input type = "text" id ="username" placeholder="username" username ="username">
         </div>
         <div class ="form-text">
             <input type = "password" id ="password" placeholder="password" password ="password">
         </div>
-        <button onclick="login()">Đăng nhập</button>
-        <h4>Bạn chưa có tài khoản ? Đăng kí <a href="dangki.html">Tại Đây</h4><br>
-        <h4> <a href="dangnhapsdt.html">Đăng nhập bằng Số điện thoại</h4>
+        <div class ="form-text">
+            <input type = "number" placeholder="Phone number" id ="phone" phone = "phone">
+        </div>
+        <button onclick="sign()" >Đăng kí</button>
+        <h4>Bạn đã có tài khoản ? Đăng nhập <a href="dangnhap.html">Tại Đây</h4><br>
     </form>
 </div>
 <script>
-  function login() {
-    $.ajax({
-      url: '/auth',
+    function sign() {
+        $.ajax({
+      url: '/users',
       type: 'POST',
       data: {
         username: $('#username').val(),
-        password: $('#password').val()
+        password: $('#password').val(),
+        phone:$('#phone').val()
       }
     }).then(data => {
         console.log(data);
-        
     }).catch(err => {
         console.log(err);
     })
-  }
+}
 </script>
 </body>
 </html>
